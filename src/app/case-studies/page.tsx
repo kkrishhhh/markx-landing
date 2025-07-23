@@ -22,7 +22,23 @@ const cases = [
     ),
   },
   {
-    img: '/images/case-studies/parikrama.jpg.png',
+    img: '/images/case-studies/parikrama.jpg.png' ,
+    name: 'Parikrama – Legacy Rock Band',
+    emoji: '🥁',
+    category: 'Legacy Band',
+    metrics: ['30% Reach', 'Cross-Gen Appeal', 'Nostalgia Engine'],
+    story: (
+      <>
+        Parikrama is iconic, but their online narrative didn't reflect that. We didn't change their voice —
+        we enhanced it. By building a repeatable storytelling engine using legacy content + band psychology,
+        we revived fan nostalgia and{" "}
+        <span className="font-semibold text-amber-700">increased reel reach by 30%+</span>. Their content
+        started pulling in younger fans without alienating the old guard.
+      </>
+    ),
+  },
+  {
+    img: '/images/case-studies/vj.jpg.png',
     name: 'VJ Infinity – Performer & Personal Brand',
     emoji: '🎧',
     category: 'Performer',
@@ -53,22 +69,6 @@ const cases = [
         <span className="font-semibold text-amber-700">
           In 4 weeks, they gained 900+ organic followers and had 3 inbound booking requests from 1 reel.
         </span>
-      </>
-    ),
-  },
-  {
-    img: '/images/case-studies/vj.jpg.png',
-    name: 'Parikrama – Legacy Rock Band',
-    emoji: '🥁',
-    category: 'Legacy Band',
-    metrics: ['30% Reach', 'Cross-Gen Appeal', 'Nostalgia Engine'],
-    story: (
-      <>
-        Parikrama is iconic, but their online narrative didn't reflect that. We didn't change their voice —
-        we enhanced it. By building a repeatable storytelling engine using legacy content + band psychology,
-        we revived fan nostalgia and{" "}
-        <span className="font-semibold text-amber-700">increased reel reach by 30%+</span>. Their content
-        started pulling in younger fans without alienating the old guard.
       </>
     ),
   },

@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { Menu, X, Home, Lightbulb, FileText, Mail } from 'lucide-react'
 import { usePathname } from 'next/navigation'
-import Link from 'next/link'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -34,7 +33,7 @@ export default function Navbar() {
             const Icon = link.icon
             return (
               <li key={link.href} className="relative group">
-                <Link
+                <a
                   href={link.href}
                   className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:shadow-white/10 backdrop-blur-sm ${
                     pathname === link.href
@@ -44,7 +43,7 @@ export default function Navbar() {
                 >
                   <Icon className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
                   <span className="font-medium">{link.label}</span>
-                </Link>
+                </a>
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 group-hover:w-full"></div>
               </li>
             )
@@ -85,7 +84,7 @@ export default function Navbar() {
               const Icon = link.icon
               return (
                 <li key={link.href}>
-                  <Link
+                  <a
                     href={link.href}
                     className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:shadow-white/10 backdrop-blur-sm ${
                       pathname === link.href
@@ -96,7 +95,7 @@ export default function Navbar() {
                   >
                     <Icon className="w-5 h-5" />
                     <span className="font-medium">{link.label}</span>
-                  </Link>
+                  </a>
                 </li>
               )
             })}
